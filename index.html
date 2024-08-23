@@ -15,10 +15,10 @@
 <body>
   <div class="container">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#intro">SHIVA RAM</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -196,22 +196,22 @@
           </section>
           <section class="projects-content">
             <article class="card">
-              <!-- <div class="card"> -->
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSujrEKG2al7HH-S2JAUuJ-d1G-iUJtK6eWQ&s"
                 class="card-img-top" alt="...">
-              <div class="card-body">
+              <div class="card-body" id="module">
                 <h5 class="card-title">INDIA ADVENTURE ROUTES | 2023</h5>
-                <p title="Creating timely and engaging content for social media is essential for capturing customer attention and fostering interaction. By proactively managing the content creation process, we can ensure a high volume of quality posts that resonate with our audience and drive meaningful engagement. Our goal is to deliver exceptional results, enhancing customer interaction and strengthening our brand presence on social media platforms."
+                <p class="collapse" id="collapseExample" aria-expanded="false"
+                  title="Creating timely and engaging content for social media is essential for capturing customer attention and fostering interaction. By proactively managing the content creation process, we can ensure a high volume of quality posts that resonate with our audience and drive meaningful engagement. Our goal is to deliver exceptional results, enhancing customer interaction and strengthening our brand presence on social media platforms."
                   class="card-text">Creating timely and engaging content for social media is essential for capturing
                   customer attention and fostering interaction. By proactively managing the content creation process, we
                   can ensure a high volume of quality posts that resonate with our audience and drive meaningful
                   engagement. Our goal is to deliver exceptional results, enhancing customer interaction and
                   strengthening our brand presence on social media platforms.</p>
+                <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample" aria-expanded="false"
+                  aria-controls="collapseExample"></a>
               </div>
-              <!-- </div> -->
             </article>
             <article class="card">
-              <!-- <div class="card"> -->
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR65kh1DHFIS5juuFlNu-vkRnE_4TQSgbyK8LRv7ZSMD078Acak"
                 class="card-img-top" alt="...">
@@ -222,7 +222,15 @@
                   animations, driven by a strong personal interest in graphic design. I am eager to leverage my artistic
                   skills and creativity to gain further experience in the graphic design field.</p>
               </div>
-              <!-- </div> -->
+            </article>
+            <article class="card">
+              <img src="images/story_shape_img.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">STORY SHAPE</h5>
+                <p title="Crafting captivating visuals to tell your brand's story. Follow for design inspiration and creative content. 📸🎨 #StoryShape_"
+                  class="card-text">Crafting captivating visuals to tell your brand's story. Follow for design
+                  inspiration and creative content. 📸🎨 #StoryShape_</p>
+              </div>
             </article>
           </section>
         </article>
@@ -270,28 +278,48 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="32"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="33"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="34"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="35"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="36"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="37"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="38"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="39"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="40"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="41"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="42"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="43"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="44"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="45"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="46"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="47"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="48"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="49"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="50"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="51"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="52"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="53"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="54"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="55"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="56"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="57"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <video autoplay class="d-block w-100">
                 <source src="./images/img (1).mp4" width="1024" height="552" type="video/mp4">
                 Your browser does not support the video tag.
-             </video>
-              <!-- <img class="d-block w-100" src="./images/img (3).mp4" alt="First slide"> -->
+              </video>
             </div>
             <div class="carousel-item">
               <video autoplay class="d-block w-100">
                 <source src="./images/img (2).mp4" width="1024" height="552" type="video/mp4">
                 Your browser does not support the video tag.
-             </video>
-              <!-- <img class="d-block w-100" src="./images/image2.jpeg" alt="Second slide"> -->
+              </video>
             </div>
             <div class="carousel-item">
               <video autoplay class="d-block w-100">
                 <source src="./images/img (3).mp4" width="1024" height="552" type="video/mp4">
                 Your browser does not support the video tag.
-             </video>
-              <!-- <img class="d-block w-100" src="./images/Designer.png" alt="Third slide"> -->
+              </video>
             </div>
             <div class="carousel-item">
               <img class="d-block w-100" src="./images/img (12).png" alt="Fourth slide">
@@ -398,6 +426,99 @@
             <div class="carousel-item">
               <img class="d-block w-100" src="./images/img (44).png" alt="Fourth slide">
             </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./images/img (45).png" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+              <video autoplay class="d-block w-100">
+                <source src="./images/img (4).mp4" width="1024" height="552" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="carousel-item">
+              <video autoplay class="d-block w-100">
+                <source src="./images/img (5).mp4" width="1024" height="552" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="carousel-item">
+              <video autoplay class="d-block w-100">
+                <source src="./images/img (9).mp4" width="1024" height="552" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="carousel-item">
+              <video autoplay class="d-block w-100">
+                <source src="./images/img (10).mp4" width="1024" height="552" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="carousel-item">
+              <video autoplay class="d-block w-100">
+                <source src="./images/img (11).mp4" width="1024" height="552" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./images/img (6).png" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./images/img (7).png" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./images/img (8).png" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./images/img (46).jpg" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+              <video autoplay class="d-block w-100">
+                <source src="./images/img (47).mp4" width="1024" height="552" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./images/img (48).png" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+              <video autoplay class="d-block w-100">
+                <source src="./images/img (49).mp4" width="1024" height="552" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./images/img (50).png" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+              <video autoplay class="d-block w-100">
+                <source src="./images/img (51).mp4" width="1024" height="552" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./images/img (52).png" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./images/img (53).png" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./images/img (54).png" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./images/img (55).jpeg" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./images/img (56).jpeg" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./images/img (57).png" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./images/img (58).png" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./images/img (59).png" alt="Fourth slide">
+            </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -426,12 +547,12 @@
             <a target="_blank" href="mailto:storyshape33@gmail.com">
               <i class="bi bi-envelope-at-fill"></i>
               <h5>Email & Website</h5>
-              <p>sivaramrikka@gmail.com</p>
+              <p>storyshape33@gmail.com</p>
             </a>
-            <a target="_blank" href="https://www.google.com/maps">
+            <a target="_blank" href="https://maps.app.goo.gl/zoSy7GuGrLfTsFH56">
               <i class="bi bi-geo-alt-fill"></i>
               <h5>Address</h5>
-              <p>Meriden, CT, 06451</p>
+              <p>USA</p>
             </a>
             <a target="_blank" href="https://www.instagram.com/storyshape_?igsh=MW1ocXN1c3Z2NnRkeA%3D%3D&utm_source=qr">
               <i class="bi bi-instagram"></i>

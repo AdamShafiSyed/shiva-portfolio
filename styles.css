@@ -1,23 +1,32 @@
+:root {
+    --primary-color: #444243;
+    --background-color:   #3eb2f8;
+    --color: #fff;
+}
+/* var(--background-color)  */
 body {
-    background-color: #3a4156 !important;
-    color: #fff !important;
+    background-color: var(--primary-color) !important;
+    color: var(--color) !important;
 }
 
 #intro {
     margin-bottom: 1rem;
 }
 .nav-link{
-    color: #fff !important;
+    color: var(--color) !important;
 }
 
 .nav-link:active {
-    color: #3eb2f8 !important;
+    color: var(--background-color) !important;
 }
 .navbar-toggler{
-    background-color: #fff !important;
+    background-color: var(--color) !important;
+}
+.navbar-toggle .icon-bar {
+    background-color: var(--color);
 }
 .nav-link[tabindex]:focus {
-    color:#3eb2f8 !important;
+    color:var(--background-color) !important;
     outline: none;
 }
 
@@ -41,19 +50,19 @@ body {
 }
 
 .navbar-brand {
-    background-color: #3eb2f8;
-    color: #fff !important;
+    background-color: var(--background-color);
+    color: var(--color) !important;
     padding: 3px 50px;
 }
 
 .name p {
     font-style: italic;
-    color: #3eb2f8;
+    color: var(--background-color);
 }
 
 .title {
-    background-color: #3eb2f8;
-    color: #fff;
+    background-color: var(--background-color);
+    color: var(--color);
     font-weight: 600;
     width: fit-content;
     padding: 3px 10px;
@@ -116,7 +125,7 @@ body {
 .exp-title>hr,
 .projects-header>hr, .sample_works_header>hr {
     border-width: 0.5rem;
-    border-color: #3eb2f8;
+    border-color: var(--background-color);
     opacity: unset;
 }
 
@@ -138,7 +147,7 @@ body {
 }
 
 .skills-list>li {
-    border: 1px solid #fff;
+    border: 1px solid var(--color);
     padding: 0.5rem 1rem;
     border-radius: 1.5rem;
     margin: 0.5rem;
@@ -193,10 +202,10 @@ body {
 
 /* styles for font stroke */
 .h1-stroke {
-    color: #fff;
+    color: var(--color);
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: var(--color);
     font-weight: bold;
 }
 
@@ -244,7 +253,7 @@ body {
 
 .exp>.exp-title>i {
     font-size: 2rem;
-    color: #3eb2f8;
+    color: var(--background-color);
     -webkit-text-stroke-width: 0.1rem;
 }
 
@@ -288,7 +297,7 @@ body {
 }
 
 .projects-content>article {
-    width: 25rem;
+    flex: 1;
 }
 #contact{
     margin: 1rem 0;
@@ -328,7 +337,7 @@ video{
 }
 .contact-header>p {
     font-style: italic;
-    color: #3eb2f8;
+    color: var(--background-color);
     letter-spacing: 0.1rem;
     word-spacing: 0.2rem;
 }
@@ -340,12 +349,17 @@ video{
 .contact-desc>a{
     flex: 1;
     text-align: center;
-    color: #fff;
+    color: var(--color);
     text-decoration: none;
+}
+.contact-desc>a:hover{
+    background-color: unset;
+    color: var(--background-color) !important;
+    text-decoration: none !important;
 }
 .contact-desc>a>i{
     font-size: 3.5rem;
-    color: #3eb2f8;
+    color: var(--background-color);
 }
 .contact-desc>a>h5{
     margin-top: 1rem;
@@ -361,9 +375,37 @@ video{
     object-fit: contain;
 }
 
+#module {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  
+  #module #collapseExample.collapse:not(.show) {
+    display: block;
+    height: 9rem;
+    overflow: hidden;
+  }
+  
+  #module #collapseExample.collapsing {
+    height: 3rem;
+  }
+  
+  #module a.collapsed::after {
+    content: 'See More';
+  }
+  
+  #module a:not(.collapsed)::after {
+    content: 'See Less';
+  }
+
 @media screen and (max-width: 992px) {
     .container{
         max-width: 100% !important;
+    }
+    .projects-content>article{
+        width: 20rem;
+        flex: unset;
     }
 }
 @media screen and (max-width: 576px) {
@@ -379,6 +421,10 @@ video{
     }
     #education>article>section{
         padding: 1rem;
+        text-align: center;
+    }
+    .education-desc>article>p{
+        font-size: 0.9rem;
     }
     .about-header>h1, .education-header, .projects-header{
         text-align: center;
