@@ -1,12 +1,26 @@
 :root {
-    --primary-color: #444243;
-    --background-color:   #3eb2f8;
+    --primary-color:  #3eb2f8;
+    --background-color: #444243  ;
+    --body-bg-color: #444243;
     --color: #fff;
+    --navbar-bg-color: #fff;
+    --navbar-text-color: #000;
+    --navbar-brand-bg-color: #3eb2f8;
+    --navbar-brand-text-color: #fff;
 }
-/* var(--background-color)  */
+/* background color | primary color | color
+#1 -  #444243 | #3eb2f8 | #fff
+#2 - #015761 | #F7DC4F | #fff
+*/
 body {
-    background-color: var(--primary-color) !important;
+    /* background-color: var(--body-bg-color) !important; */
     color: var(--color) !important;
+    background-image: url('./images//1-Photoroom.png');
+    /* background-blend-mode: multiply; */
+    /* background-size: cover; */
+    /* backdrop-filter: drop-shadow(2px 4px 6px black); */
+    backdrop-filter: brightness(0.5);
+
 }
 
 #intro {
@@ -17,7 +31,7 @@ body {
 }
 
 .nav-link:active {
-    color: var(--background-color) !important;
+    color: var(--primary-color) !important;
 }
 .navbar-toggler{
     background-color: var(--color) !important;
@@ -26,7 +40,7 @@ body {
     background-color: var(--color);
 }
 .nav-link[tabindex]:focus {
-    color:var(--background-color) !important;
+    color:var(--color) !important;
     outline: none;
 }
 
@@ -50,18 +64,18 @@ body {
 }
 
 .navbar-brand {
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     color: var(--color) !important;
     padding: 3px 50px;
 }
 
 .name p {
     font-style: italic;
-    color: var(--background-color);
+    color: var(--primary-color);
 }
 
 .title {
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     color: var(--color);
     font-weight: 600;
     width: fit-content;
@@ -125,7 +139,7 @@ body {
 .exp-title>hr,
 .projects-header>hr, .sample_works_header>hr {
     border-width: 0.5rem;
-    border-color: var(--background-color);
+    border-color: var(--primary-color);
     opacity: unset;
 }
 
@@ -253,7 +267,7 @@ body {
 
 .exp>.exp-title>i {
     font-size: 2rem;
-    color: var(--background-color);
+    color: var(--primary-color);
     -webkit-text-stroke-width: 0.1rem;
 }
 
@@ -337,7 +351,7 @@ video{
 }
 .contact-header>p {
     font-style: italic;
-    color: var(--background-color);
+    color: var(--primary-color);
     letter-spacing: 0.1rem;
     word-spacing: 0.2rem;
 }
@@ -354,12 +368,12 @@ video{
 }
 .contact-desc>a:hover{
     background-color: unset;
-    color: var(--background-color) !important;
+    color: var(--primary-color) !important;
     text-decoration: none !important;
 }
 .contact-desc>a>i{
     font-size: 3.5rem;
-    color: var(--background-color);
+    color: var(--primary-color);
 }
 .contact-desc>a>h5{
     margin-top: 1rem;
